@@ -12,18 +12,17 @@
 	src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <p class="welcome-text">Pokój rozmów Rozproszone Systemy Komputerowe</p>
 	<div id="welcome-page">
 		<div class="welcome-page-container">
-			<h1 class="title">Welcome - To join the chat group enter your
-				name</h1>
+			<h1 class="title">Aby dołączyć do czatu wpisz swoją nazwę i kliknij przycisk <span class="dolacz">Dołącz</span></h1>
 			<form id="welcomeForm" name="welcomeForm">
 				<div class="form-group">
-					<input type="text" id="name" placeholder="name"
+					<input type="text" id="name" placeholder="Nazwa użytkownika"
 						class="form-control" />
 				</div>
 				<div class="form-group">
-					<button type="submit" onclass="accent username-submit">Lets
-						Begin</button>
+					<button type="submit" onclass="accent username-submit">Dołącz</button>
 				</div>
 			</form>
 		</div>
@@ -31,7 +30,7 @@
 	<div id="dialogue-page" class="hidden">
 		<div class="dialogue-container">
 			<div class="dialogue-header">
-				<h2>JavaInUse Chat Application</h2>
+				<h2>Pokój rozmów</h2>
 			</div>
 			<ul id="messageList">
 			</ul>
@@ -39,14 +38,15 @@
 				<div class="form-group">
 					<div class="input-group clearfix">
 						<input type="text" id="chatMessage"
-							placeholder="Enter a message...." autocomplete="off"
+							placeholder="Wprowadź tekst wiadomości...." autocomplete="off"
 							class="form-control" />
-						<button type="submit" class="glyphicon glyphicon-share-alt">Send</button>
+						<button type="submit" class="glyphicon glyphicon-share-alt">Wyślij</button>
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
+    <p class="end-text">Dziękujemy za wizytę!</p>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
 	<script
