@@ -1,5 +1,5 @@
 # chatbox-mq-rabbit
-## prezentacja
+## Prezentacja działania czatu z wykorzystaniem SpringBoot i WebSocket
 ### Logowanie użytkownika:
 ![plot](./img/1.png)
 ### Wpisywanie wiadomości:
