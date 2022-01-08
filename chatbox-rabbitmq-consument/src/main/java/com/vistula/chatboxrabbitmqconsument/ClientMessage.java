@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PublishMessage {
+public class ClientMessage {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @GetMapping("/add")
-    public String get(@RequestParam String message) {
-        rabbitTemplate.convertAndSend( "kolejka", message);
-        return "sent";
+    @GetMapping("/receiveMessage")
+    public String get() {
+        Object message = rabbitTemplate.receiveAndConvert( "kolejka");
+        return message.toString();
     }
 }
