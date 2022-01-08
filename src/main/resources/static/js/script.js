@@ -40,10 +40,10 @@ function onMessageReceived(payload) {
 	var messageElement = document.createElement('li');
 	if (message.type === 'newUser') {
 		messageElement.classList.add('event-data');
-		message.content = message.sender + 'użytkownik dołączył do czatu';
+		message.content = message.sender + ' dołączył/a do czatu';
 	} else if (message.type === 'Leave') {
 		messageElement.classList.add('event-data');
-		message.content = message.sender + 'użytkownik opuścił czat';
+		message.content = message.sender + ' opuścił/a czat';
 	} else {
 		messageElement.classList.add('message-data');
 		var element = document.createElement('i');
