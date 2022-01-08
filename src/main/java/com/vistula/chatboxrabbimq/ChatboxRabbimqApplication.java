@@ -9,5 +9,4 @@ public class ChatboxRabbimqApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ChatboxRabbimqApplication.class, args);
 	}
-
 }
